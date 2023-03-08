@@ -17,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/animals")
 public class AnimalController {
+
     private final MapperAnimal mapperAnimal;
 
     private final AnimalService animalService;
