@@ -23,7 +23,7 @@ public class User {
     @Size(min=3,max=20, message = "Name must be at least 3 Characters long and 20 as maximum")
     private String name;
 
-    @Email(message = "The Sting must be email type")
+    @Email(message = "The String must be email type")
     @NotBlank(message = "must not be blank")
     private String email;
 

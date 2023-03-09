@@ -1,7 +1,6 @@
 package com.example.animal_shelter_org.controller;
 
 import com.example.animal_shelter_org.dto.AnimalDTO;
-import com.example.animal_shelter_org.dto.UserDTO;
 import com.example.animal_shelter_org.mapper.MapperAnimal;
 import com.example.animal_shelter_org.model.Animal;
 import com.example.animal_shelter_org.service.AnimalService;

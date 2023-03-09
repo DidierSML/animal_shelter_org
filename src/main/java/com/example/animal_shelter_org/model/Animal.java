@@ -7,8 +7,6 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
-import java.util.Set;
-
 @Data
 @Entity
 @Table(name = "animals")
@@ -20,15 +18,15 @@ public class Animal {
     private Integer idAnimal;
 
     @NotBlank(message = "must not be blank")
-    @Size(min=3,max=20, message = "Name must be at least 3 Characters long and 10 					as maximum")
+    @Size(min=3,max=20, message = "Name must be at least 3 Characters long and 10 as maximum")
     private String name;
 
     @Min(0)
     @Max(30)
     private int age;
 
-    //        @NotBlank(message = "must not be blank")
-//        @Size( message = "Only those Species are allowed: CANINE, FELINE or 									HAMSTER")
+    // @NotBlank(message = "must not be blank")
+    // @Size( message = "Only those Species are allowed: CANINE, FELINE or HAMSTER")
     @Enumerated(EnumType.STRING) //For use enum in Specie
     private Specie specie;
 

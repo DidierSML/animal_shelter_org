@@ -14,7 +14,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public User save (User animal) { return userRepository.save(animal);}
+    public User save (User user) { return userRepository.save(user);}
     public List<User> findAll(){return userRepository.findAll();}
     public User findById (Integer id) {
         return userRepository.findById(id).orElseThrow(() -> new NotFoundCustomException("User not found, please verify"));
@@ -22,5 +22,5 @@ public class UserService {
 
     public void deleteById (Integer id){ userRepository.deleteById(id);}
 
-    public User update(User animal){return userRepository.save(animal);}
+    public User update(User user){return userRepository.save(user);}
 }
