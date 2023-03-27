@@ -5,10 +5,14 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "animals")
 public class Animal {
 
@@ -31,7 +35,7 @@ public class Animal {
     private Specie specie;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
-    @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = true)
+    @JoinColumn(name = "user_id") //Este campo si se crea y se muestra en la tabla "animal"
     //reference name was modify for the same name as column name
     private User user;
 

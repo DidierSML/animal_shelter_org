@@ -1,9 +1,7 @@
 package com.example.animal_shelter_org.mapper;
 
 import com.example.animal_shelter_org.dto.AnimalDTO;
-import com.example.animal_shelter_org.dto.UserDTO;
 import com.example.animal_shelter_org.model.Animal;
-import com.example.animal_shelter_org.model.User;
 import jakarta.validation.Valid;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;

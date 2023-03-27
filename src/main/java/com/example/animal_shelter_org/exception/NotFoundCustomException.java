@@ -1,6 +1,5 @@
 package com.example.animal_shelter_org.exception;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
