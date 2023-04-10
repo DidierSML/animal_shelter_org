@@ -5,12 +5,10 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
 @Entity
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "animals")
@@ -34,8 +32,8 @@ public class Animal {
     @Enumerated(EnumType.STRING) //For use enum in Specie
     private Specie specie;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = true)
-    @JoinColumn(name = "user_id") //Este campo si se crea y se muestra en la tabla "animal"
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id") //Este @ indica que esta propiedad es la clave foranea de la Clase User
     //reference name was modify for the same name as column name
     private User user;
 
