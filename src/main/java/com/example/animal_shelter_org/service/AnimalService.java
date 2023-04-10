@@ -15,13 +15,19 @@ public class AnimalService {
 
     private final AnimalRepository animalRepository;
 
-    public Animal save (Animal animal) { return animalRepository.save(animal);}
-    public List<Animal> findAll(){return animalRepository.findAll();}
+    public Animal save (Animal animal) {
+        return animalRepository.save(animal);
+    }
+    public List<Animal> findAll(){
+        return animalRepository.findAll();
+    }
     public Animal findById (Integer id) {
         return animalRepository.findById(id).orElseThrow(() -> new NotFoundCustomException("Animal not found, please verify"));
     }
 
-    public void deleteById (Integer id){ animalRepository.deleteById(id);}
+    public void deleteById (Integer id){
+        animalRepository.deleteById(id);}
 
-    public Animal update(Animal animal){return animalRepository.save(animal);}
+    public Animal update(Animal animal){
+        return animalRepository.save(animal);}
 }
