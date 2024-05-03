@@ -2,7 +2,6 @@ package com.example.animal_shelter_org.service;
 
 import com.example.animal_shelter_org.exception.NotFoundCustomException;
 import com.example.animal_shelter_org.model.Animal;
-import com.example.animal_shelter_org.model.User;
 import com.example.animal_shelter_org.repository.AnimalRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
