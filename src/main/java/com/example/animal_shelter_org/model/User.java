@@ -31,7 +31,7 @@ public class User {
             cascade = CascadeType.ALL, orphanRemoval = true)// targetEntity = Animal.class)change cascade type persist for all, orphan remove elimina los Animales que no tengan dueño
     private List<Animal> animalsList; //La lista de objetos va del lado del 1
 
-    /**
+    /*
      * public void addAnimalToUser(Animal animal) {
      *         animalsList.add(animal);
      *         animal.setUser(this);
@@ -42,6 +42,4 @@ public class User {
      *         animal.setUser(null);
      *     }
      */
-
-
 }
