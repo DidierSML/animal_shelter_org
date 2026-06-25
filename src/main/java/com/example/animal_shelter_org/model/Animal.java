@@ -33,7 +33,7 @@ public class Animal {
     private Specie specie;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id") //Este @ indica que esta propiedad es la clave foranea de la Clase User
+    @JoinColumn(name = "user_id") //Este @ indica que esta propiedad es la clave foránea(FK) de la (C)User
     //reference name was modify for the same name as column name
     private User user;
 
